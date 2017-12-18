@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BlockManager : MonoBehaviour {
     [SerializeField]
+    private int BlockLife;
+   //Triangle Control
+    [SerializeField]
     private Sprite[] Colors;
     [SerializeField]
     private bool istriangle;
@@ -20,6 +23,19 @@ public class BlockManager : MonoBehaviour {
 	
 	void Update ()
     {
-		
+		if(BlockLife < 1)
+        {
+            Death();
+        }
 	}
+
+    void DecreaseLife()
+    {
+        BlockLife -= 1;
+    }
+
+    void Death()
+    {
+        Destroy(this.gameObject);
+    }
 }

@@ -8,6 +8,11 @@ public class BallMovement : MonoBehaviour {
     private Rigidbody2D rb;
     [SerializeField]
     private GameObject player;
+
+    [SerializeField]
+    private Sprite SmileTex;
+    [SerializeField]
+    private Sprite NormalTex;
     void Start ()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -24,9 +29,19 @@ public class BallMovement : MonoBehaviour {
     {
        if(collision.transform.gameObject.tag == "Under")
         {
-            Debug.Log("hit");
-            player.transform.position = this.transform.position;
+           // Destroy(this.gameObject);
         }
+
+        if (collision.transform.gameObject.tag == "Obstacle")
+        {
+            this.GetComponent<SpriteRenderer>().sprite = SmileTex;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        
+            this.GetComponent<SpriteRenderer>().sprite = NormalTex;
     }
 }
 
