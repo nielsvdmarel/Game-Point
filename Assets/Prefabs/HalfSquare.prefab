@@ -50,7 +50,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1421771744709254}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 465f06aa92053f347a67f6b0456ce9d0, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -91,11 +91,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43f58ea87474e7b488568bc5f63cf671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BlockLife: 0
   Colors:
   - {fileID: 21300000, guid: 22eabfa1c39edb449a614e9f7221dd94, type: 3}
   - {fileID: 21300000, guid: 9c9f4666269a2a24ab30c03d5b39c0b4, type: 3}
   - {fileID: 21300000, guid: f8e081472f2539b43ae44322af4bbf1c, type: 3}
   - {fileID: 21300000, guid: da8b37477894f4c44993723930495296, type: 3}
+  istriangle: 0
+  RotateDegrees: []
 --- !u!212 &212603173283479228
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -17,6 +17,7 @@ public class BallMovement : MonoBehaviour {
     {
         rb = this.GetComponent<Rigidbody2D>();
         rb.velocity = Vector2.one.normalized * BallSpeed;
+        rb.velocity = Vector2.positiveInfinity;
 
     }
 
