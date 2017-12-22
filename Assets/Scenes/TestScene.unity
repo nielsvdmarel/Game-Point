@@ -1441,8 +1441,10 @@ MonoBehaviour:
   SpawnObjects:
   - {fileID: 1439114806250864, guid: bc234703a811a1043987f92a6f577fd3, type: 2}
   - {fileID: 1421771744709254, guid: 953fe3b0a8fbead4a95c6ea13e74a86c, type: 2}
-  - {fileID: 1243251161914738, guid: 48c99df3cd6b68b43bf1be4e861f0aad, type: 2}
+  - {fileID: 1611656583824718, guid: 270aa22d83cfc364e80efc4efc55c91f, type: 2}
+  - {fileID: 1065029501019918, guid: 7566fa50d864d9649825f355cf15af1c, type: 2}
   - {fileID: 1728710994095064, guid: dc578755ce35efe4e96343a00ba0a402, type: 2}
+  - {fileID: 1243251161914738, guid: 48c99df3cd6b68b43bf1be4e861f0aad, type: 2}
   GameRound: 1
   AmountOfSpawnPlaces: 7
   SpawnPos:

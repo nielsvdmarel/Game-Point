@@ -16,6 +16,7 @@ public class BlockManager : MonoBehaviour {
     private bool isGolded;
     [SerializeField]
     private float[] RotateDegrees;
+    
     void Start()
     {
         BlockLife = GameObject.Find("GameLeader").GetComponent<LevelManager>().GameRound;

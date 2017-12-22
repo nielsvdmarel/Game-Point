@@ -53,7 +53,7 @@ public class LevelManager : MonoBehaviour {
                 float RandomValue2 = Random.Range(0f, 1f);
                 if (RandomValue > 1.95f)
                 {
-                    Instantiate(SpawnObjects[(Random.Range(2, 3))].gameObject, SpawnPos[i].transform.position, Quaternion.identity);
+                    Instantiate(SpawnObjects[(Random.Range(3, 5))].gameObject, SpawnPos[i].transform.position, Quaternion.identity);
                 }
                 else
                 {
@@ -64,7 +64,7 @@ public class LevelManager : MonoBehaviour {
                     }
                     else
                     {
-                        Instantiate(SpawnObjects[1].gameObject, SpawnPos[i].transform.position, Quaternion.identity);
+                        Instantiate(SpawnObjects[(Random.Range(1, 3))].gameObject, SpawnPos[i].transform.position, Quaternion.identity);
                     }
                 } 
             }
